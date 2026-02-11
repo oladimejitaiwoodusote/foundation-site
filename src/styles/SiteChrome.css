@@ -1,0 +1,149 @@
+/* =========================
+   Site Chrome / Container
+   ========================= */
+   .site-chrome {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* removed pointer-events:none to make children visible and interactive */
+  }
+  
+  /* =========================
+     Vertical Line
+     ========================= */
+  .vertical-rule {
+    position: fixed;
+    left: 32px;
+    top: 0;
+    width: 1px;
+    height: 100vh;
+    background: black;
+    z-index: 1002; /* above navbar */
+    transition: top 300ms ease;
+    pointer-events: auto;
+  }
+  
+  /* =========================
+     Horizontal Lines
+     ========================= */
+  .horizontal-rule {
+    position: fixed;
+    height: 1px;
+    background: black;
+    z-index: 1002; /* above navbar */
+    transition: all 300ms ease;
+    pointer-events: auto;
+  }
+  
+  /* Top horizontal line (above navbar initially) */
+  .horizontal-rule.above-navbar {
+    top: 10px;      /* distance from top of page */
+    left: 450px;     /* left inset */
+    right: 48px;    /* right inset */
+    opacity: 1;
+  }
+  
+  /* Bottom horizontal line (below navbar when scrolled) */
+  .horizontal-rule.below-navbar {
+    top: 96px;      /* right below navbar */
+    left: 0;
+    right: 0;
+    opacity: 0;
+  }
+  
+  /* =========================
+     Navbar
+     ========================= */
+  .nav-frame {
+    display: grid;
+    grid-template-columns: 60px 420px 1fr;
+    align-items: center;
+    height: 96px;
+    padding-right: 48px;
+    background: white;
+    pointer-events: auto; /* navbar clickable */
+    z-index: 1001;         /* below horizontal lines */
+  }
+  
+  /* =========================
+     Foundation Name
+     ========================= */
+  .foundation-name {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    font-family: "Cormorant Garamond", serif; /* Meursault alternative */
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 1.1;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .foundation-name span {
+    line-height: 1.1;
+  }
+  
+  /* =========================
+     Navbar Links
+     ========================= */
+  .nav-links {
+    grid-column: 3;
+    display: flex;
+    justify-content: center;  /* spreads links from center */
+    gap: 80px;                /* wider spacing */
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;         /* slightly less bold */
+    position: relative;
+    cursor: pointer;          /* ensures pointer cursor */
+    transition: color 150ms;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline; /* underline on hover */
+  }
+  
+  .nav-links a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 1px;
+    background: black;        /* underline when active */
+  }
+  
+  /* =========================
+     Hero / Scrolled Modes
+     ========================= */
+  .site-chrome.hero .vertical-rule {
+    top: 0;
+  }
+  
+  .site-chrome.hero .horizontal-rule.above-navbar {
+    opacity: 1; /* visible above navbar */
+  }
+  
+  .site-chrome.hero .horizontal-rule.below-navbar {
+    opacity: 0; /* hidden initially */
+  }
+  
+  .site-chrome.scrolled .vertical-rule {
+    top: 97px; /* vertical line moves below horizontal line */
+  }
+  
+  .site-chrome.scrolled .horizontal-rule.above-navbar {
+    opacity: 0; /* hide top line */
+  }
+  
+  .site-chrome.scrolled .horizontal-rule.below-navbar {
+    opacity: 1; /* show full-width horizontal line below navbar */
+  }
+  
