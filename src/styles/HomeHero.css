@@ -1,0 +1,130 @@
+/* ============================= */
+/* HERO SECTION */
+/* ============================= */
+
+.hero-section {
+    background: #ffffff;
+
+    /* Remove extra top padding */
+    padding-top: 0;
+    padding-bottom: 100px;
+
+    /* Move content closer to vertical rule */
+    padding-left: 0px;  
+    padding-right: 20px;
+
+    /* Pull hero under the fixed navbar */
+    margin-top: -70px; /* same as navbar height */
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+/* ============================= */
+/* LEFT SIDE */
+/* ============================= */
+
+.hero-text {
+    flex: 1;
+    max-width: 700px;
+
+    display: flex;
+    flex-direction: column;
+
+    /* Match video height so divider aligns perfectly */
+    min-height: 570px;
+}
+
+/* ============================= */
+/* TITLE */
+/* ============================= */
+
+.hero-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.05;
+    margin-bottom: 28px;
+}
+
+.hero-title span {
+    display: block;
+}
+
+/* ============================= */
+/* DESCRIPTION */
+/* ============================= */
+
+.hero-description {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 21px;
+    line-height: 1.6;
+    margin-bottom: 36px;
+    color: #222;
+}
+
+/* ============================= */
+/* BUTTONS */
+/* ============================= */
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 32px;
+    align-items: center; /* center buttons */
+}
+
+.hero-btn {
+    width: 260px; /* same width for all buttons */
+    padding: 14px 28px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    cursor: pointer;
+
+    border: 1px solid black;
+    border-radius: 8px;
+
+    background: white;
+    color: black;
+
+    transition: all 200ms ease;
+    text-align: center;
+}
+
+.hero-btn:hover {
+    background: black;
+    color: white;
+}
+
+/* ============================= */
+/* HORIZONTAL LINE UNDER BUTTONS */
+/* ============================= */
+
+.hero-divider {
+    margin-top: auto;
+    height: 1px;
+    background: black;
+    width: 100%;
+}
+
+/* ============================= */
+/* RIGHT SIDE VIDEO */
+/* ============================= */
+
+.hero-video {
+    flex-shrink: 0;
+}
+
+.hero-video video {
+    display: block;
+    width: 870px;
+    height: 570px;
+    object-fit: cover;
+}

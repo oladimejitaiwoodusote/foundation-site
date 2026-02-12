@@ -40,8 +40,8 @@
   /* Top horizontal line (above navbar initially) */
   .horizontal-rule.above-navbar {
     top: 10px;      /* distance from top of page */
-    left: 450px;     /* left inset */
-    right: 48px;    /* right inset */
+    left: 425px;     /* left inset */
+    right: 70px;    /* right inset */
     opacity: 1;
   }
   

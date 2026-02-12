@@ -1,0 +1,55 @@
+/* ============================= */
+/* Navbar Spacer */
+/* ============================= */
+
+.home-navbar-spacer {
+    height: 96px; /* Must match navbar height */
+    width: 100%;
+  }
+  
+  
+  /* ============================= */
+  /* Hero Section */
+  /* ============================= */
+  
+  .home-hero {
+    height: 100vh;
+    background: #dddddd;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .home-hero-content {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  
+  /* ============================= */
+  /* Content Section */
+  /* ============================= */
+  
+  .home-content {
+    min-height: 200vh;
+    background: #f5f5f5;
+    padding: 4rem 2rem;
+  }
+  
+  .home-content-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .home-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .home-content p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
