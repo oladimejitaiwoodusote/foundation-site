@@ -1,5 +1,6 @@
 import "../styles/Home.css";
 import HomeHero from "../components/HomeHero";
+import HomeAbout from "../components/HomeAbout";
 
 
 function Home() {
@@ -10,6 +11,10 @@ function Home() {
 
       {/* Hero Section */}
       <HomeHero/>
+
+      {/* Hero About */}
+      <HomeAbout/>
+
 
       {/* Content Below */}
       <section className="home-content">

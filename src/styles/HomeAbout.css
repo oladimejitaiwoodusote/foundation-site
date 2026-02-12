@@ -1,86 +1,87 @@
 /* ============================= */
-/* HERO SECTION */
+/* ABOUT SECTION (Home Page 2) */
 /* ============================= */
 
-.hero-section {
-    background: #ffffff;
-
-    /* Remove extra top padding */
-    padding-top: 0;
+.about-section {
+    background: #fdf5e6; /* cream from client palette */
+    padding-top: 80px;
     padding-bottom: 100px;
 
-    /* Move content closer to vertical rule */
-    padding-left: 0px;  
-    padding-right: 20px;
-
-    /* Pull hero under the fixed navbar */
-    margin-top: -70px; /* same as navbar height */
+    /* Full width across viewport */
+    width: 100vw;
+    margin-left: calc(-50vw + 50%); /* keeps section centered */
+    padding-left: 0;
+    padding-right: 0;
 }
 
-.hero-container {
+/* Wrap content in a max-width container */
+.about-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 60px;
+
+    /* Keeps content same width as before */
+    max-width: 1400px; /* adjust to your preference */
+    margin: 0 auto;    /* centers container */
+    padding-left: 20px;  /* restores original inner spacing */
+    padding-right: 20px;
 }
 
 /* ============================= */
 /* LEFT SIDE */
 /* ============================= */
 
-.hero-text {
+.about-text {
     flex: 1;
     max-width: 700px;
-
     display: flex;
     flex-direction: column;
-
-    /* Match video height so divider aligns perfectly */
-    min-height: 570px;
+    min-height: 500px;
+    justify-content: center;  /* keeps button vertically centered if desired */
+    align-items: center;      /* center button horizontally like Hero section */
 }
 
 /* ============================= */
 /* TITLE */
 /* ============================= */
 
-.hero-title {
+.about-title {
     font-family: "Cormorant Garamond", serif;
-    font-size: 56px;
+    font-size: 48px;
     font-weight: 700;
-    line-height: 1.05;
-    margin-bottom: 28px;
-}
-
-.hero-title span {
-    display: block;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    text-align: left; /* keeps heading aligned left */
 }
 
 /* ============================= */
 /* DESCRIPTION */
 /* ============================= */
 
-.hero-description {
+.about-description {
     font-family: "Cormorant Garamond", serif;
     font-size: 21px;
     line-height: 1.6;
     margin-bottom: 36px;
     color: #222;
+    text-align: left; /* keeps paragraph aligned left */
 }
 
 /* ============================= */
 /* BUTTONS */
 /* ============================= */
 
-.hero-buttons {
+.about-buttons {
     display: flex;
     flex-direction: column;
     gap: 16px;
     margin-bottom: 32px;
-    align-items: center; /* center buttons */
+    align-items: center; /* center button horizontally */
 }
 
-.hero-btn {
-    width: 260px; /* same width for all buttons */
+.about-btn {
+    width: 260px;
     padding: 14px 28px;
     font-size: 20px;
     font-weight: 600;
@@ -98,7 +99,7 @@
     text-align: center;
 }
 
-.hero-btn:hover {
+.about-btn:hover {
     background: black;
     color: white;
 }
@@ -107,24 +108,24 @@
 /* HORIZONTAL LINE UNDER BUTTONS */
 /* ============================= */
 
-.hero-divider {
-    margin-top: auto;   /* pushes to bottom of 570px height */
-    height: 2px;        /* match SiteChrome lines */
+.about-divider {
+    margin-top: auto;
+    height: 3px; /* match SiteChrome lines */
     background: black;
     width: 100%;
 }
 
 /* ============================= */
-/* RIGHT SIDE VIDEO */
+/* RIGHT SIDE IMAGE */
 /* ============================= */
 
-.hero-video {
+.about-image {
     flex-shrink: 0;
 }
 
-.hero-video video {
+.about-image img {
     display: block;
     width: 870px;
-    height: 570px;
+    height: 500px;
     object-fit: cover;
 }

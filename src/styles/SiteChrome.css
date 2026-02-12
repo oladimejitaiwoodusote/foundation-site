@@ -17,10 +17,10 @@
     position: fixed;
     left: 32px;
     top: 0;
-    width: 1px;
+    width: 2px;          /* thicker */
     height: 100vh;
     background: black;
-    z-index: 1002; /* above navbar */
+    z-index: 1002;       /* above navbar */
     transition: top 300ms ease;
     pointer-events: auto;
   }
@@ -30,9 +30,9 @@
      ========================= */
   .horizontal-rule {
     position: fixed;
-    height: 1px;
+    height: 2px;         /* thicker */
     background: black;
-    z-index: 1002; /* above navbar */
+    z-index: 1002;       /* above navbar */
     transition: all 300ms ease;
     pointer-events: auto;
   }
@@ -40,7 +40,7 @@
   /* Top horizontal line (above navbar initially) */
   .horizontal-rule.above-navbar {
     top: 10px;      /* distance from top of page */
-    left: 425px;     /* left inset */
+    left: 425px;    /* left inset */
     right: 70px;    /* right inset */
     opacity: 1;
   }
@@ -116,8 +116,8 @@
     left: 0;
     bottom: -6px;
     width: 100%;
-    height: 1px;
-    background: black;        /* underline when active */
+    height: 3px;      /* thicker underline */
+    background: black; 
   }
   
   /* =========================
