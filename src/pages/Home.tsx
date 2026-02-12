@@ -1,6 +1,7 @@
 import "../styles/Home.css";
 import HomeHero from "../components/HomeHero";
 import HomeAbout from "../components/HomeAbout";
+import HomeFocus from "../components/HomeFocus";
 
 
 function Home() {
@@ -15,6 +16,8 @@ function Home() {
       {/* Hero About */}
       <HomeAbout/>
 
+      {/* Hero Focus */}
+      <HomeFocus/>
 
       {/* Content Below */}
       <section className="home-content">
