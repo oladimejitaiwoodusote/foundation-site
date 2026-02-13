@@ -54,14 +54,20 @@
     flex-direction: column;
     align-items: center;
     text-align: center; /* center content inside card */
-    gap: 16px;
+    gap: 0px;
 }
 
 .focus-card img {
     width: 100%;
     height: 240px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+.focus-card h3 {
+    font-size: 30px;
+    margin-bottom: 0px;
 }
 
 /* CARD TITLE */
@@ -82,10 +88,11 @@
 
 /* CARD BUTTON */
 .focus-card-btn {
-    width: 180px;
-    padding: 12px 20px;
-    font-size: 18px;
+    width: 260px;
+    padding: 14px 28px;
+    font-size: 20px;
     font-weight: 600;
+    letter-spacing: 0.5px;
     text-decoration: none;
     cursor: pointer;
     border: 1px solid black;
