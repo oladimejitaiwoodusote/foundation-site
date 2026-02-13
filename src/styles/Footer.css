@@ -1,0 +1,50 @@
+/* =========================
+   Footer Container
+   ========================= */
+
+   .footer {
+    background: white;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+/* =========================
+   Footer Grid Layout
+   ========================= */
+
+.footer-frame {
+    display: grid;
+    grid-template-columns: 60px 420px 1fr; /* same structure as navbar */
+    align-items: start;
+    padding-right: 48px;
+}
+
+/* Reuse foundation-name class from navbar */
+/* No need to redefine font — it's already styled */
+
+/* =========================
+   Right Side Content
+   ========================= */
+
+.footer-right {
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Copyright text */
+
+.footer-copy {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+/* Horizontal line */
+
+.footer-line {
+    height: 2px;
+    background: black;
+    width: 100%;
+}

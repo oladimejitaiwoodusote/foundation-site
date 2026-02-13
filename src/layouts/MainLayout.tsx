@@ -1,5 +1,7 @@
 import { Outlet } from "react-router-dom";
 import SiteChrome from "../components/SiteChrome";
+import Footer from "../components/Footer";
+
 
 export default function MainLayout() {
   return (
@@ -8,6 +10,7 @@ export default function MainLayout() {
       <main id="page-content">
         <Outlet />
       </main>
+      <Footer/>
     </>
   );
 }
