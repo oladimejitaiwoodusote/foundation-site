@@ -2,6 +2,7 @@ import "../styles/Home.css";
 import HomeHero from "../components/HomeHero";
 import HomeAbout from "../components/HomeAbout";
 import HomeFocus from "../components/HomeFocus";
+import HomeProof from "../components/HomeProof";
 
 
 function Home() {
@@ -19,19 +20,9 @@ function Home() {
       {/* Hero Focus */}
       <HomeFocus/>
 
-      {/* Content Below */}
-      <section className="home-content">
-        <div className="home-content-inner">
-          <h2>Content Below</h2>
-          <p>
-            This is the section that comes after the hero. Scroll down to see
-            the horizontal bar drop below the navbar and the vertical line adjust.
-          </p>
-          <p>
-            You can add multiple sections here as needed.
-          </p>
-        </div>
-      </section>
+      {/* Hero Proof */}
+      <HomeProof/>
+
     </>
   );
 }
