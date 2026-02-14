@@ -3,7 +3,7 @@ import "../styles/FocusHero.css";
 
 function FocusHero() {
   return (
-    <section className="focus-hero">
+    <section id="page-hero" className="focus-hero">
       <div className="focus-hero-inner">
         <div className="focus-left">
           <h1 className="focus-title">Our Work</h1>

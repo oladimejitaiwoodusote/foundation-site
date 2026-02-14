@@ -4,7 +4,7 @@ import heroVideo from "../assets/Video 1.mp4";
 
 function HomeHero() {
     return (
-      <section id="home-hero" className="hero-section">
+      <section id="page-hero" className="hero-section">
         <div className="hero-container">
           {/* LEFT SIDE — Text */}
           <div className="hero-text">

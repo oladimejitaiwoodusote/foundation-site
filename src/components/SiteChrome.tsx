@@ -6,33 +6,32 @@ export default function SiteChrome() {
   const [mode, setMode] = useState<"hero" | "scrolled" | "hidden">("hero");
 
   useEffect(() => {
-    const hero = document.getElementById("home-hero");
-    if (!hero) return;
-
     const handleScroll = () => {
+      const hero = document.getElementById("page-hero");
+  
+      // If page has no hero (future pages), default to scrolled
+      if (!hero) {
+        setMode("scrolled");
+        return;
+      }
+  
       const rect = hero.getBoundingClientRect();
-
-      // 1️⃣ Hero completely out of view
+  
       if (rect.bottom <= 0) {
         setMode("hidden");
-      }
-
-      // 2️⃣ Hero touching navbar
-      else if (rect.top <= 96) {
+      } else if (rect.top <= 96) {
         setMode("scrolled");
-      }
-
-      // 3️⃣ Top of page
-      else {
+      } else {
         setMode("hero");
       }
     };
-
+  
     handleScroll();
     window.addEventListener("scroll", handleScroll);
-
+  
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  
 
   return (
     <div className={`site-chrome ${mode}`}>
