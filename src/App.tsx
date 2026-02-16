@@ -3,6 +3,7 @@ import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/Home";
 import FocusArea from "./pages/FocusArea";
 import FundingPartnerships from "./pages/FundingPartnerships";
+import Impact from "./pages/Impact";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/focus" element={<FocusArea/>}/>
           <Route path="/funding" element={<FundingPartnerships/>}/>
+          <Route path="/impact" element={<Impact/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

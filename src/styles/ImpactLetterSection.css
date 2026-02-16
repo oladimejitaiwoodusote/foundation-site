@@ -1,0 +1,98 @@
+/* ============================= */
+/* HERO                          */
+/* ============================= */
+
+.impact-hero {
+    text-align: center;
+    padding: 140px 20px 80px;
+  }
+  
+  .impact-hero h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 64px;
+    font-weight: 600;
+  }
+  
+  .impact-hero-line {
+    width: 1000px;
+    height: 2px;
+    background: black;
+    margin: 24px auto 0;
+  }
+  
+  /* ============================= */
+  /* LETTERS SECTION               */
+  /* ============================= */
+  
+  .letters-section {
+    padding: 120px 20px;
+  }
+  
+  .letters-inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+  }
+  
+  .letters-left h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 42px;
+    font-weight: 600;
+  }
+  
+  /* Document Panel */
+  
+  .document-panel {
+    border: 1px solid black;
+    padding: 40px;
+    background: #fafafa;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    transition: all 0.3s ease;
+  }
+  
+  .document-panel:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  }
+  
+  .document-header {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .document-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .document-line {
+    height: 2px;
+    background: #ccc;
+  }
+  
+  .document-line.short {
+    width: 60%;
+  }
+  
+  .document-footer {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  /* Divider */
+  .impact-divider {
+    height: 1px;
+    background: #ddd;
+    margin: 100px auto;
+    max-width: 1200px;
+  }
+  
