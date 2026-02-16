@@ -1,0 +1,26 @@
+.about-hero {
+    text-align: center;
+    padding: 120px 20px 80px;
+    background: #ffffff;
+  }
+  
+  .about-hero h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 56px;
+    margin-bottom: 28px;
+  }
+  
+  .about-hero p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+  }
+  
+  .about-hero-line {
+    width: 1250px;
+    height: 2px;
+    background: black;
+    margin: 0 auto;
+  }
+  

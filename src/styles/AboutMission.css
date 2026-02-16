@@ -1,0 +1,64 @@
+.mission-section {
+    background: #fdf5e6; /* cream like other sections */
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 100px 20px;
+  }
+  
+.mission-inner {
+max-width: 1400px;
+margin: 0 auto;
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: center;
+gap: 60px;
+}
+
+.mission-left h2 {
+font-family: "Cormorant Garamond", serif;
+font-size: 48px;
+margin-bottom: 100px;
+text-align: center;
+}
+
+.mission-left p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+  }
+
+/* Document Panel */
+.document-panel {
+background: white;
+border: 1px solid black;
+padding: 40px 30px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.document-symbol {
+font-size: 60px;
+margin-bottom: 16px;
+}
+
+.document-title span {
+display: block;
+font-weight: 700;
+font-size: 24px;
+text-align: center;
+}
+
+.document-lines {
+width: 80px;
+height: 2px;
+background: black;
+margin: 16px 0;
+}
+
+.document-values span {
+display: block;
+margin: 8px 0;
+font-size: 18px;
+}
