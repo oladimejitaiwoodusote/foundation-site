@@ -1,7 +1,5 @@
 import FundingHero from "../components/FundingHero";
 import FundingSection from "../components/FundingSection";
-import "../styles/FundingPartnerships.css";
-
 
 function FundingPartnerships() {
   return (

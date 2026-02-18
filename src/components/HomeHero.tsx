@@ -20,7 +20,7 @@ function HomeHero() {
             </p>
   
             <div className="hero-buttons">
-                <Link to="/focus-areas" className="hero-btn">
+                <Link to="/focus" className="hero-btn">
                     Our Work
                 </Link>
 

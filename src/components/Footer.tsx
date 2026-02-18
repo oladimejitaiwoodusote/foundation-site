@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import "../styles/Footer.css";
+import FoundationLogo from "../assets/Foundation_Logo.jpg";
+
 
 function Footer() {
   return (
@@ -7,9 +9,8 @@ function Footer() {
       <div className="footer-frame">
 
         {/* Foundation Name (left, same styling as navbar) */}
-        <Link to="/" className="foundation-name">
-          <span>The Nnamdi</span>
-          <span>Agbim Family Foundation</span>
+        <Link to="/" className="foundation-logo">
+          <img src={FoundationLogo} alt="Nnamdi Agbim Family Foundation Logo" />
         </Link>
 
         {/* Right Side */}
