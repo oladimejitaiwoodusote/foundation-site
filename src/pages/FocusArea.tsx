@@ -10,6 +10,7 @@ function FocusArea() {
       <FocusHero />
 
       <FocusDetailSection
+        id = "food"
         title="Food & Nutrition"
         image={FoodImage}
         objective="To combat hunger and malnutrition while promoting sustainable, community-based nutrition
@@ -28,6 +29,7 @@ function FocusArea() {
       />
 
       <FocusDetailSection
+        id = "health"
         title="Health & Wellness"
         image={HealthImage}
         objective="To improve access to preventive healthcare, essential medical support, and community
@@ -47,6 +49,7 @@ function FocusArea() {
       />
 
       <FocusDetailSection
+        id = "education"
         title="Education & Research"
         image={EducationImage}
         objective="To promote access to quality education, skills development, and long-term human capital

@@ -1,6 +1,7 @@
 import "../styles/FocusDetailSection.css";
 
 interface FocusDetailSectionProps {
+  id: string;
   title: string;
   image: string;
   objective: string;
@@ -10,6 +11,7 @@ interface FocusDetailSectionProps {
 }
 
 function FocusDetailSection({
+  id,
   title,
   image,
   objective,
@@ -18,14 +20,16 @@ function FocusDetailSection({
   reverse = false,
 }: FocusDetailSectionProps) {
   return (
-    <section className="focus-detail">
-      <div
-        className={`focus-detail-inner ${
-          reverse ? "focus-detail-reverse" : ""
-        }`}
-      >
+    <section
+      id={id}
+      className={`focus-detail ${reverse ? "focus-detail-reverse" : ""}`}
+    >
+      <div className="focus-detail-inner">
+
+        {/* LEFT SIDE */}
         <div className="focus-detail-left">
           <h2 className="focus-detail-title">{title}</h2>
+
           <h4 className="focus-mini-header">Objective</h4>
           <p className="focus-objective-text">{objective}</p>
 
@@ -42,13 +46,15 @@ function FocusDetailSection({
               <li key={index}>{item}</li>
             ))}
           </ul>
-        <div className="focus-title-divider" />
 
+          <div className="focus-title-divider" />
         </div>
 
+        {/* RIGHT SIDE */}
         <div className="focus-detail-right">
           <img src={image} alt={title} />
         </div>
+
       </div>
     </section>
   );
