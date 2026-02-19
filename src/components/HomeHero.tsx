@@ -24,9 +24,7 @@ function HomeHero() {
                     Our Work
                 </Link>
 
-                <button className="hero-btn">
-                    Partner With Us
-                </button>
+              
             </div>
             <div className="hero-divider" />
           </div>

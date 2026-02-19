@@ -1,6 +1,4 @@
 import "../styles/HomeProof.css";
-import impactLetter from "../assets/Impact Letter.pdf";
-
 
 function HomeProof() {
   return (
@@ -26,9 +24,10 @@ function HomeProof() {
         </div>
 
         {/* Button */}
-        <a href={impactLetter} className="proof-btn" target="_blank" rel="noopener noreferrer">
-            Read Full Letter
+        <a href="/impact" className="proof-btn">
+          View Letters of Appreciation
         </a>
+
       </div>
     </section>
   );

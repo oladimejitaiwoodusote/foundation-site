@@ -30,7 +30,7 @@ function Footer() {
 
             <div className="footer-social">
               <a 
-                href="https://instagram.com/yourprofile"
+                href="https://instagram.com/tnaf_foundation"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
