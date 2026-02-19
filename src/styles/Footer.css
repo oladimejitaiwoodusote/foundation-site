@@ -12,12 +12,13 @@
    Footer Grid Layout
    ========================= */
 
-.footer-frame {
+   .footer-frame {
     display: grid;
-    grid-template-columns: 60px 420px 1fr; /* same structure as navbar */
-    align-items: start;
+    grid-template-columns: 60px auto 1fr; /* make middle column flexible */
+    align-items: end;                     /* <-- key change */
     padding-right: 48px;
-}
+    gap: 20px;                            /* optional, spacing between columns */
+  }
 
 /* Reuse foundation-name class from navbar */
 /* No need to redefine font — it's already styled */
@@ -48,3 +49,72 @@
     background: black;
     width: 100%;
 }
+
+.footer-contact {
+    margin-bottom: 20px;
+    font-family: "Cormorant Garamond", serif;
+    
+  }
+  
+  .footer-contact h4 {
+    margin-bottom: 12px;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  
+  .footer-contact p {
+    margin: 6px 0;
+    font-size: 16px;
+  }
+  
+  .footer-contact a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .footer-contact a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-social {
+    margin-top: 12px;
+  }
+  
+  .instagram-icon {
+    font-size: 22px;
+    transition: transform 200ms ease, opacity 200ms ease;
+  }
+  
+  .footer-social a:hover .instagram-icon {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  
+  .footer-logo {
+    grid-column: 2;
+    display: flex;
+    align-items: flex-end;  /* pushes it downward */
+    padding-bottom: 0px;    /* fine-tune vertical alignment */
+  }
+  
+  .footer-logo img {
+    height: 50px;           /* same size as navbar */
+    width: auto;
+    object-fit: contain;
+  }
+
+  .contact-number {
+    display: inline-block;      /* critical */
+    position: relative;
+    padding-bottom: 4px;        /* spacing between text & line */
+  }
+  
+  .contact-number::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;                /* matches exact text width */
+    height: 1.5px;
+    background: black;
+  }
