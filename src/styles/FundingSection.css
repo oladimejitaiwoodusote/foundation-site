@@ -3,10 +3,15 @@
 /* ============================= */
 
 .funding-section {
-    padding: 140px 0;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
     background: #fdf5e6;
+    padding: 140px 0;
+    /* width: 100vw;
+    margin-left: calc(-50vw + 50%); */
+    margin-left: calc(-1 * var(--left-gutter));
+    margin-right: calc(-1 * var(--page-padding-right));
+
+    padding-left: var(--left-gutter);
+    padding-right: var(--page-padding-right);
   }
   
   .funding-inner {
