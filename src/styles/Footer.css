@@ -118,3 +118,25 @@
     height: 1.5px;
     background: black;
   }
+
+  @media (max-width: 768px) {
+
+    .footer-frame {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 20px;
+      gap: 40px;
+    }
+  
+    .footer-right {
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-line {
+      width: 100%;
+    }
+  
+  }
+  

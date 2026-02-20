@@ -6,6 +6,7 @@ import FoundationLogo from "../assets/Foundation_Logo.jpg";
 
 export default function SiteChrome() {
   const [mode, setMode] = useState<"hero" | "scrolled" | "hidden">("hero");
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,12 +45,17 @@ export default function SiteChrome() {
         <Link to="/" className="foundation-logo">
           <img src={FoundationLogo} alt="Nnamdi Agbim Family Foundation Logo" />
         </Link>
+        <div className="mobile-menu-toggle"
+          onClick={() => setMobileOpen(!mobileOpen)}
+        >
+          ☰
+        </div>
 
-        <nav className="nav-links">
-          <NavLink to="/focus">Focus Areas ▼</NavLink>
-          <NavLink to="/funding">Funding & Partnerships ▼</NavLink>
-          <NavLink to="/impact">Impact ▼</NavLink>
-          <NavLink to="/about">About Us ▼</NavLink>
+        <nav className={`nav-links ${mobileOpen ? "open" : ""}`}>
+          <NavLink to="/focus" onClick={() => setMobileOpen(false)}>Focus Areas ▼</NavLink>
+          <NavLink to="/funding" onClick={() => setMobileOpen(false)}>Funding & Partnerships ▼</NavLink>
+          <NavLink to="/impact" onClick={() => setMobileOpen(false)}>Impact ▼</NavLink>
+          <NavLink to="/about" onClick={() => setMobileOpen(false)}>About Us ▼</NavLink>
         </nav>
       </header>
 

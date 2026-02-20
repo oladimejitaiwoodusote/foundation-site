@@ -129,3 +129,29 @@
     height: 500px;
     object-fit: cover;
 }
+
+@media (max-width: 768px) {
+
+    .about-section {
+      width: 100%;
+      margin-left: 0;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .about-container {
+      flex-direction: column;
+      gap: 40px;
+    }
+  
+    .about-text {
+      min-height: auto;
+      align-items: flex-start;
+    }
+  
+    .about-image img {
+      width: 100%;
+      height: auto;
+    }
+  
+  }

@@ -27,7 +27,6 @@
     background: black;
     z-index: 1002;       /* above navbar */
     transition: top 300ms ease;
-    pointer-events: auto;
   }
   
   /* =========================
@@ -44,9 +43,13 @@
   
   /* Top horizontal line (above navbar initially) */
   .horizontal-rule.above-navbar {
-    top: 10px;      /* distance from top of page */
-    left: 425px;    /* left inset */
-    right: 70px;    /* right inset */
+    /* top: 10px;      
+    left: 425px;   
+    right: 70px;   
+    opacity: 1; */
+    top: 10px;
+    left: calc(var(--left-gutter) + 365px);
+    right: var(--page-padding-right);
     opacity: 1;
   }
   
@@ -137,7 +140,7 @@
   }
   
   .site-chrome.scrolled .vertical-rule {
-    top: 97px; /* vertical line moves below horizontal line */
+    top: 96px; /* vertical line moves below horizontal line */
   }
   
   .site-chrome.scrolled .horizontal-rule.above-navbar {
@@ -148,36 +151,75 @@
     opacity: 1; /* show full-width horizontal line below navbar */
   }
   
+  .mobile-menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
  /* =========================
    MOBILE FIXES
    ========================= */
 
 @media (max-width: 768px) {
 
-  .vertical-rule {
-    display: none;
+  .site-chrome.hero .vertical-rule,
+  .site-chrome.scrolled .vertical-rule {
+  top: 80px !important;
   }
 
-  .horizontal-rule.above-navbar {
-    display: none;
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  .vertical-rule {
+    display: block;
+    left: 10px;
+    width: 2px;
+    height: 290vh;  
   }
 
   .horizontal-rule.below-navbar {
-    left: 0;
-    right: 0;
-  }
+  top: 80px;
+  opacity: 1 !important;
+}
+
+.horizontal-rule.above-navbar {
+  display: none;
+}
 
   .nav-frame {
-    grid-template-columns: 1fr;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
     padding: 0 20px;
   }
 
+  .foundation-logo {
+    margin-left: 0;
+  }
+  
   .foundation-name {
     grid-column: auto;
     font-size: 22px;
   }
 
   .nav-links {
-    display: none; /* For now. We'll add hamburger later */
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 24px;
+    display: none;
+    border-bottom: 1px solid black;
+  }
+  
+  .nav-links.open {
+    display: flex;
   }
 }

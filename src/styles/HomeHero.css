@@ -22,6 +22,7 @@
     justify-content: space-between;
     align-items: flex-start;
     gap: 60px;
+    width: 100%;
 }
 
 /* ============================= */
@@ -127,6 +128,8 @@
     width: 870px;
     height: 570px;
     object-fit: cover;
+    width: 100%;
+
 }
 
 .hero-video {
@@ -169,5 +172,32 @@
     background: white;
     color: black;
     transform: scale(1.08);
+  }
+  
+  @media (max-width: 768px) {
+
+    .hero-container {
+      flex-direction: column;
+      gap: 40px;
+      padding-right: 0px;
+    }
+  
+    .hero-text {
+      min-height: auto;
+    }
+  
+    .hero-title {
+      font-size: 36px;
+    }
+  
+    .hero-description {
+      font-size: 18px;
+    }
+  
+    .hero-video video {
+      width: 100%;
+      height: auto;
+    }
+  
   }
   
