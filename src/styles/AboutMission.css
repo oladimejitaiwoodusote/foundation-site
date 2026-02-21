@@ -68,3 +68,39 @@ display: block;
 margin: 8px 0;
 font-size: 18px;
 }
+
+@media (max-width: 900px) {
+  .mission-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .mission-left h2 {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+
+  .mission-left p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .document-panel {
+    padding: 30px 20px;
+  }
+
+  .document-symbol {
+    font-size: 40px;
+  }
+
+  .document-title span {
+    font-size: 20px;
+  }
+
+  .document-values span {
+    font-size: 16px;
+  }
+}
