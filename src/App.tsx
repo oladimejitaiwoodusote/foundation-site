@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/Home";
 import FocusArea from "./pages/FocusArea";
@@ -9,6 +10,7 @@ import AboutUs from "./pages/AboutUs";
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop/>
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />

@@ -11,19 +11,19 @@ function HomeFocus() {
       img: Image1,
       title: "Food Security",
       text: "Providing sustainable solutions to hunger and malnutrition in underserved communities.",
-      link: "/focus/food",
+      link: "/focus",
     },
     {
       img: Image2,
       title: "Healthcare Access",
       text: "Ensuring timely and reliable healthcare for those who need it most.",
-      link: "/focus/healthcare",
+      link: "/focus",
     },
     {
       img: Image3,
       title: "Education",
       text: "Building opportunities through quality education and lifelong learning programs.",
-      link: "/focus/education",
+      link: "/focus",
     },
   ];
   return (
