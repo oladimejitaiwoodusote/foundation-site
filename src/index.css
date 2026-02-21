@@ -46,4 +46,8 @@ body {
     --left-gutter: 20px;
     --page-padding-right: 20px;
   }
+
+  #page-content {
+    padding-top: 80px; /* matches mobile navbar height */
+  }
 }

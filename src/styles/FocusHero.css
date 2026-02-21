@@ -114,4 +114,42 @@ margin-left: -40px;     /* 🔥 shift image slightly left */
       height: 400px;
     }
   }
+
+  @media (max-width: 768px) {
+    .focus-hero {
+      padding-top: 80px;   /* reduce top padding for mobile */
+      padding-bottom: 60px; /* reduce bottom padding */
+      margin-left: calc(-1 * var(--left-gutter)); /* still spans full width */
+      margin-right: calc(-1 * var(--page-padding-right));
+      padding-left: var(--left-gutter);
+      padding-right: var(--page-padding-right);
+    }
+  
+    .focus-hero-inner {
+      gap: 40px;             /* smaller gap between text & image */
+    }
+  
+    .focus-title {
+      font-size: 36px;       /* smaller title for mobile */
+      margin-bottom: 24px;
+    }
+  
+    .focus-buttons {
+      align-items: center;    /* center buttons on mobile */
+      gap: 16px;
+    }
+  
+    .focus-btn {
+      width: 100%;           /* full width buttons on mobile */
+      max-width: 260px;      /* optional max width */
+      font-size: 18px;       /* slightly smaller font */
+      padding: 12px 20px;
+    }
+  
+    .focus-right img {
+      width: 100%;           /* image spans full width */
+      height: auto;          /* scale height automatically */
+      margin-left: 0;        /* reset desktop left shift */
+    }
+  }
   
