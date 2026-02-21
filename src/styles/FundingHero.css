@@ -1,31 +1,50 @@
 .funding-header {
-    padding-top: 160px;
-    padding-bottom: 100px;
-    text-align: center;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.funding-header-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.funding-header h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.funding-header p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.funding-header-divider {
+  height: 2px;
+  background: black;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .funding-header {
+    padding-top: 80px;
+    padding-bottom: 60px;
   }
-  
-  .funding-header-inner {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  
+
   .funding-header h1 {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 56px;
-    font-weight: 700;
-    margin-bottom: 24px;
+    font-size: 38px;
   }
-  
+
   .funding-header p {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 22px;
-    line-height: 1.6;
-    margin-bottom: 32px;
+    font-size: 18px;
   }
-  
+
   .funding-header-divider {
-    height: 2px;
-    background: black;
-    width: 100%;
+    height: 1px;
   }
-  
+}

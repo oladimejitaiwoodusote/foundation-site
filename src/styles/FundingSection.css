@@ -50,7 +50,8 @@
   }
   
   .funding-divider {
-    width: 650px;
+    width: 100%;
+    max-width: 650px;
     height: 2px;
     background: black;
     margin-bottom: 30px;
@@ -163,5 +164,51 @@
     .funding-inner.reverse {
       direction: ltr;
     }
+  }
+
+  @media (max-width: 768px) {
+
+    .funding-section {
+      padding: 80px 0;
+    }
+  
+    .funding-inner {
+      gap: 40px;
+    }
+  
+    .funding-title {
+      font-size: 34px;
+    }
+  
+    .funding-left h4 {
+      font-size: 20px;
+    }
+  
+    .funding-left ul {
+      font-size: 16px;
+    }
+  
+    .funding-divider {
+      height: 1px;
+    }
+  
+    /* Editorial panel mobile adjustments */
+  
+    .editorial-panel {
+      padding: 40px 20px;
+    }
+  
+    .editorial-symbol {
+      font-size: 48px;
+    }
+  
+    .editorial-title {
+      font-size: 24px;
+    }
+  
+    .editorial-values {
+      font-size: 16px;
+    }
+  
   }
   
