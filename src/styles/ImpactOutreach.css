@@ -47,7 +47,11 @@
   }
 
   .community-hero-line{
-    width: 1000px;
+    /* width: 1000px;
+    height: 2px;
+    background: black;
+    margin: 28px auto 80px; */
+    width: min(90%, 1000px);
     height: 2px;
     background: black;
     margin: 28px auto 80px;
@@ -69,6 +73,11 @@
   @media (max-width: 640px) {
     .community-grid {
       grid-template-columns: 1fr;
+    }
+
+    .community-section h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
     }
   }
   

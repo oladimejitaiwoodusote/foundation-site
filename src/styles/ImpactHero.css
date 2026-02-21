@@ -3,6 +3,15 @@
 /* ============================= */
 
 .impact-hero {
+    /* width: 100%;
+    padding: 160px 20px 100px;
+    text-align: center;
+    background: white; */
+    /* width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 160px 20px 100px;
+    text-align: center;
+    background: white; */
     width: 100%;
     padding: 160px 20px 100px;
     text-align: center;
@@ -11,16 +20,26 @@
   
   .impact-hero h1 {
     font-family: "Cormorant Garamond", serif;
-    font-size: 72px;
+    font-size: 0px;
     font-weight: 600;
     letter-spacing: 1px;
     margin: 0;
+  }  
+
+@media (max-width: 768px) {
+
+  .impact-hero {
+    padding: 110px 16px 60px;
   }
-  
-  .impact-hero-line {
-    width: 1000px;
+
+  section.impact-hero h1 {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+
+  section.impact-hero .impact-hero-line {
+    width: 70%;
     height: 2px;
-    background: black;
-    margin: 28px auto 0;
+    margin: 18px auto 0;
   }
-  
+}
