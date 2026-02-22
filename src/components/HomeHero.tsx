@@ -2,7 +2,7 @@ import "../styles/HomeHero.css";
 import { Link } from "react-router-dom";
 import { useRef, useState } from "react";
 import { FiPlay, FiPause, FiVolume2, FiVolumeX } from "react-icons/fi";
-import heroVideo from "../assets/Video 1.mp4";
+import heroVideo from "../assets/hero-video.mp4";
 
 function HomeHero() {
   const videoRef = useRef<HTMLVideoElement>(null);
