@@ -3,8 +3,13 @@ import FocusDetailSection from "../components/FocusDetailSection";
 import FoodImage from "../assets/Image 1.jpg";
 import HealthImage from "../assets/Image 2.jpg";
 import EducationImage from "../assets/Image 3.jpg";
+import { useEffect } from "react";
 
 function FocusArea() {
+
+  useEffect(() => {
+    document.title = "Focus Area - The Nnamdi Agbim Family Foundation"
+  })
   return (
     <>
       <FocusHero />
