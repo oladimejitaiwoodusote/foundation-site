@@ -1,5 +1,6 @@
 import FundingHero from "../components/FundingHero";
 import FundingSection from "../components/FundingSection";
+import PartnersSection from "../components/PartnersSection";
 import { useEffect } from "react";
 
 function FundingPartnerships() {
@@ -7,9 +8,11 @@ function FundingPartnerships() {
     useEffect(() => {
         document.title = "Funding & Partnerships - The Nnamdi Agbim Family Foundation"
       })
-  return (
-    <>
+      return (
+          <>
         <FundingHero/>
+        
+        <PartnersSection/>
 
         <FundingSection
             title="Funding & Approach"
@@ -47,7 +50,9 @@ function FundingPartnerships() {
                 "Partnerships with local organisations, institutions, and community leaders to ensure relevance, trust, and effective delivery",
             ]}
         reverse
-      />
+        />
+
+
     </>
   )
 }

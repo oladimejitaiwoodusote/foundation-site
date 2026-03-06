@@ -1,4 +1,5 @@
 import "../styles/FocusDetailSection.css";
+import { Link } from "react-router-dom";
 
 interface FocusDetailSectionProps {
   id: string;
@@ -8,6 +9,7 @@ interface FocusDetailSectionProps {
   focusAreas: string[];
   initiatives: string[];
   reverse?: boolean;
+  learnMoreLink?: string
 }
 
 function FocusDetailSection({
@@ -18,6 +20,7 @@ function FocusDetailSection({
   focusAreas,
   initiatives,
   reverse = false,
+  learnMoreLink,
 }: FocusDetailSectionProps) {
   return (
     <section
@@ -46,6 +49,12 @@ function FocusDetailSection({
               <li key={index}>{item}</li>
             ))}
           </ul>
+
+          {learnMoreLink && (
+          <Link to={learnMoreLink} className="focus-button">
+            Learn More →
+          </Link>
+          )}
 
           <div className="focus-title-divider" />
         </div>

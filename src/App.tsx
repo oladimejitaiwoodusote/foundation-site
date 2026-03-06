@@ -6,6 +6,7 @@ import FocusArea from "./pages/FocusArea";
 import FundingPartnerships from "./pages/FundingPartnerships";
 import Impact from "./pages/Impact";
 import AboutUs from "./pages/AboutUs";
+import EducationFocus from "./pages/EducationFocus";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
           <Route path="/focus" element={<FocusArea/>}/>
           <Route path="/funding" element={<FundingPartnerships/>}/>
           <Route path="/impact" element={<Impact/>}/>
-          <Route path="about" element={<AboutUs/>}/>
+          <Route path="/about" element={<AboutUs/>}/>
+          <Route path = "/focus/education" element={<EducationFocus/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

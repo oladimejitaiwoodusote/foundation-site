@@ -52,10 +52,10 @@ export default function SiteChrome() {
         </div>
 
         <nav className={`nav-links ${mobileOpen ? "open" : ""}`}>
+          <NavLink to="/about" onClick={() => setMobileOpen(false)}>About Us ▼</NavLink>
           <NavLink to="/focus" onClick={() => setMobileOpen(false)}>Focus Areas ▼</NavLink>
           <NavLink to="/funding" onClick={() => setMobileOpen(false)}>Funding & Partnerships ▼</NavLink>
           <NavLink to="/impact" onClick={() => setMobileOpen(false)}>Impact ▼</NavLink>
-          <NavLink to="/about" onClick={() => setMobileOpen(false)}>About Us ▼</NavLink>
         </nav>
       </header>
 

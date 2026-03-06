@@ -88,6 +88,31 @@
     object-fit: cover;
   }
   
+  /* LEARN MORE BUTTON */
+
+.focus-button {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  text-decoration: none;
+  color: black;
+
+  border: 1px solid black;
+  padding: 10px 18px;
+
+  transition: all 0.25s ease;
+}
+
+.focus-button:hover {
+  background: black;
+  color: white;
+}
   /* RESPONSIVE */
   
   @media (max-width: 1024px) {

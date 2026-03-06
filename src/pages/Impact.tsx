@@ -1,6 +1,7 @@
 import ImpactHero from "../components/ImpactHero";
 import ImpactLetterSection from "../components/ImpactLetterSection";
 import ImpactOutreach from "../components/ImpactOutreach";
+import ImpactStorySection from "../components/ImpactStorySection";
 import { useEffect } from "react";
 
 function Impact() {
@@ -12,6 +13,7 @@ function Impact() {
     <>
         <ImpactHero/>
         <ImpactLetterSection/>
+        <ImpactStorySection/>
         <ImpactOutreach/>
     </>
   )

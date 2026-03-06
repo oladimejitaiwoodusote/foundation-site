@@ -70,6 +70,7 @@ function FocusArea() {
           "Mentorship and exchange programs linking students with professionals for guidance, coaching, and career exposure",
           "Establishment of community skills and training hubs offering vocational and digital skills, with a focus on women and youth empowerment"
         ]}
+        learnMoreLink="/focus/education"
       />
     </>
   );
