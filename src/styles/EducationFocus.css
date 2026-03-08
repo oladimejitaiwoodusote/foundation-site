@@ -1,0 +1,38 @@
+/* ============================= */
+/* EDUCATION HERO                */
+/* ============================= */
+
+.education-hero {
+    max-width: 1400px;
+    margin: 120px auto 80px auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .education-hero h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 56px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+  
+  .education-hero p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    line-height: 1.7;
+  
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  /* divider */
+  
+  .education-hero::after {
+    content: "";
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: 2px;
+    background: black;
+    margin: 50px auto 0 auto;
+  }

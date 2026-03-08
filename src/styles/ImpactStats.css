@@ -1,0 +1,58 @@
+/* ============================= */
+/* IMPACT STATS SECTION          */
+/* ============================= */
+
+.impact-stats {
+  background: #fdf5e6;
+
+  margin-left: calc(-1 * var(--left-gutter));
+  margin-right: calc(-1 * var(--page-padding-right));
+
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* ============================= */
+/* INNER CONTAINER               */
+/* ============================= */
+
+.impact-stats-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  text-align: center;
+}
+
+/* ============================= */
+/* STATS                         */
+/* ============================= */
+
+.impact-stat h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 56px;
+  font-weight: 600;
+}
+
+.impact-stat p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+/* ============================= */
+/* RESPONSIVE                    */
+/* ============================= */
+
+@media (max-width: 768px) {
+  .impact-stats-inner {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
