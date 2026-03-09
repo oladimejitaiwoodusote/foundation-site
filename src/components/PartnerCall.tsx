@@ -18,10 +18,6 @@ function PartnerCall() {
         access to digital learning opportunities.
       </p>
 
-      <a href="/funding-partnerships" className="partner-button">
-        Become a Partner
-      </a>
-
     </section>
   );
 }

@@ -1,60 +1,84 @@
-/* ============================= */
-/* EDUCATION PROGRAMS            */
-/* ============================= */
-
 .education-programs {
   max-width: 1400px;
   margin: 0 auto 120px auto;
+  margin-top: 50px;
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
 
-/* section headers */
+/* Each block with image + content */
+.program-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
 
-.education-programs h2 {
+/* Reverse layout for alternating blocks */
+.program-block.reverse {
+  direction: rtl;
+}
+
+.program-block.reverse .program-content {
+  direction: ltr;
+}
+
+.program-block.reverse .program-image {
+  direction: ltr;
+}
+
+/* Image styling */
+.program-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Content styling */
+.program-content h2 {
   font-family: "Cormorant Garamond", serif;
   font-size: 42px;
   font-weight: 600;
-  text-align: center;
-
-  margin-top: 80px;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
-/* paragraphs */
-
-.education-programs p {
+.program-content p,
+.program-content .program-list {
   font-family: "Cormorant Garamond", serif;
   font-size: 18px;
   line-height: 1.7;
-  margin-bottom: 20px;
 }
-
-/* lists */
 
 .program-list {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 18px;
-  line-height: 1.7;
-
-  max-width: 900px;
-  margin: 0 auto 30px auto;
   padding-left: 20px;
+  margin-bottom: 20px;
 }
 
 .program-list li {
   margin-bottom: 10px;
 }
 
-/* STEM highlight block */
-
+/* STEM highlight */
 .stem-award {
-  margin-top: 80px;
-  padding: 50px;
-
   border: 1px solid black;
+  padding: 50px;
   background: #fafafa;
+  border-radius: 10px;
 }
 
-.stem-award h2 {
-  margin-top: 0;
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .program-block {
+    grid-template-columns: 1fr;
+  }
+
+  .program-block.reverse {
+    direction: ltr;
+  }
+
+  .program-image img {
+    height: 300px;
+  }
 }

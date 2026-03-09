@@ -2,7 +2,7 @@ import FocusHero from "../components/FocusHero";
 import FocusDetailSection from "../components/FocusDetailSection";
 import FoodImage from "../assets/Image 1.jpg";
 import HealthImage from "../assets/Image 2.jpg";
-import EducationImage from "../assets/Image 3.jpg";
+import EducationImage from "../assets/Education 1.jpg";
 import { useEffect } from "react";
 
 function FocusArea() {

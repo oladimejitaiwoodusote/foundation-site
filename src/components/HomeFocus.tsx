@@ -2,7 +2,7 @@ import "../styles/HomeFocus.css";
 import { Link } from "react-router-dom";
 import Image1 from "../assets/Image 1.jpg";
 import Image2 from "../assets/Image 2.jpg";
-import Image3 from "../assets/Image 3.jpg";
+import Education1 from "../assets/Education 1.jpg";
 
 
 function HomeFocus() {
@@ -20,7 +20,7 @@ function HomeFocus() {
       link: "/focus",
     },
     {
-      img: Image3,
+      img: Education1,
       title: "Education",
       text: "Building opportunities through quality education and lifelong learning programs.",
       link: "/focus",
