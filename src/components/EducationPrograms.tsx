@@ -1,9 +1,9 @@
 import "../styles/EducationPrograms.css";
 
-import Img1 from "../assets/Education 1.jpg";
 import Img2 from "../assets/Education 2.jpg";
 import Img3 from "../assets/Education 3.jpg";
 import Img4 from "../assets/Education 4.jpg";
+import Img5 from "../assets/Education 5.jpeg";
 
 interface ProgramBlock {
   title: string;
@@ -81,7 +81,7 @@ function EducationPrograms() {
           </p>
         </>
       ),
-      image: Img1,
+      image: Img5,
     },
   ];
 
