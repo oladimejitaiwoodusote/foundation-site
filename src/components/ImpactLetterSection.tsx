@@ -10,7 +10,6 @@ function ImpactLetterSection() {
         {/* Section Heading */}
         <div className="letters-header">
           <h2>Letters of Appreciation</h2>
-          <div className="letters-divider" />
         </div>
 
         {/* Document Grid */}

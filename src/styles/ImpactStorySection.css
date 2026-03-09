@@ -11,6 +11,16 @@
     text-align: center;
     margin-bottom: 60px;
   }
+
+  .impact-story-section h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: 2px;
+    background: black;
+    margin: 30px auto 0 auto;
+  }
   
   .impact-story {
     display: grid;

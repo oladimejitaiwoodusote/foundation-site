@@ -1,5 +1,5 @@
 import "../styles/ImpactStorySection.css";
-import FortunePhoto from "../assets/Fortune.jpeg"; // Replace with actual photo path
+import FortunePhoto from "../assets/Fortune.jpeg"; 
 
 function ImpactStorySection() {
   return (

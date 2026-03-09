@@ -1,5 +1,6 @@
 import FocusHero from "../components/FocusHero";
 import FocusDetailSection from "../components/FocusDetailSection";
+import HealthImpactMini from "../components/HealthImpactMini";
 import FoodImage from "../assets/Image 1.jpg";
 import HealthImage from "../assets/Image 2.jpg";
 import EducationImage from "../assets/Education 1.jpg";
@@ -52,6 +53,8 @@ function FocusArea() {
         ]}
         reverse
       />
+
+      <HealthImpactMini/>
 
       <FocusDetailSection
         id = "education"
