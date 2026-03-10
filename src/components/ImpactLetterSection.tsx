@@ -1,6 +1,7 @@
 import "../styles/ImpactLetterSection.css";
 import impactLetter from "../assets/Impact Letter.pdf";
 import impactLetter2 from "../assets/Impact Letter 2.pdf";
+import impactLetter3 from "../assets/Impact Letter 3.pdf";
 
 function ImpactLetterSection() {
   return (
@@ -64,6 +65,31 @@ function ImpactLetterSection() {
               View Letter →
             </div>
           </a>
+
+          {/* Letter 3*/}
+          <a
+            href={impactLetter3}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="document-panel"
+          >
+          <div className="document-header">
+            <span>Ozioma Udemezue</span>
+            <small>Letter of Appreciation</small>
+          </div>
+
+          <div className="document-body">
+            <div className="document-line" />
+            <div className="document-line short" />
+            <div className="document-line" />
+            <div className="document-line" />
+            <div className="document-line short" />
+          </div>
+
+  <div className="document-footer">
+    View Letter →
+  </div>
+</a>
 
         </div>
 
